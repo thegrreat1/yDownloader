@@ -4,7 +4,7 @@
 Very simple python script using pytube module to download youtube videos using terminal.<br>
 - Required python modules can be installed by running  <code> pip install -r requirements.txt </code>
 - Tested on Linux kali 6.1.0-kali9-arm64 #1 SMP Debian 6.1.27-1kali1 (2023-05-12) aarch64 GNU/Linux
-- 
+  
 # IMPORTANT
 - *REQUIRED* cipher.py in /usr/local/lib/python'your version'/dist-packages/pytube/ has to be replaced with the one from this git<br>
 "Quick fix until pytube updates their module to fix RegexMatchError: get_transform_object: could not find match for var for={(.*?)};"<br>
