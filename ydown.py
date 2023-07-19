@@ -3,7 +3,11 @@ import pytube
 import colorama
 import sys
 
-print(colorama.Fore.GREEN, '''
+red = colorama.Fore.RED
+light_green = colorama.Fore.LIGHTGREEN_EX
+green = colorama.Fore.GREEN
+
+print(green, '''
  █████ █████     █████                                     ████                         █████                   
 ░░███ ░░███     ░░███                                     ░░███                        ░░███                    
  ░░███ ███    ███████   ██████  █████ ███ █████ ████████   ░███   ██████   ██████    ███████   ██████  ████████ 
@@ -20,22 +24,20 @@ try:
         url = str(sys.argv[1])
         outpath = str(sys.argv[2])
     else:
-        print(colorama.Fore.RED, "Usage:", colorama.Fore.LIGHTGREEN_EX, "python ydown.py URL DownloadPath")
-        print(colorama.Fore.RED, "Example:", colorama.Fore.LIGHTGREEN_EX, "python ydown.py \"https://www.youtube.com/watch?v"
+        print(red, "Usage:", light_green, "python ydown.py URL DownloadPath")
+        print(red, "Example:", light_green, "python ydown.py \"https://www.youtube.com/watch?v"
                                                                   "=dQw4w9WgXcQ&ab_channel=RickAstley\" "
               "\"/root/Downloads/\"")
     if "youtube." in url:
         try:
             pytube.YouTube(url).streams.get_highest_resolution().download(str(outpath))
-            print(colorama.Fore.LIGHTGREEN_EX, "Obtained video:", 'Name: ',
-                  str(pytube.YouTube(url).title.format()))
-            print(colorama.Fore.LIGHTGREEN_EX, "Downloaded:", "\"", str(pytube.YouTube(url).title), ".mp4\"", " To ",
-                  str(outpath))
+            print(light_green, "Obtained video:", 'Name: ', str(pytube.YouTube(url).title.format()))
+            print(light_green, "Downloaded:", "\"", str(pytube.YouTube(url).title), ".mp4\"", " To ", str(outpath))
         except Exception as error:
-            print(colorama.Fore.RED, "An error occurred: ", colorama.Fore.GREEN, type(error).__name__, "–", error)
+            print(red, "An error occurred: ", green, type(error).__name__, "–", error)
 
     else:
-        print(colorama.Fore.RED, "Error: " + colorama.Fore.GREEN, "URL has to be a valid youtube url")
+        print(red, "Error: " + green, "URL has to be a valid youtube url")
 
 except:
     sys.exit(1)
