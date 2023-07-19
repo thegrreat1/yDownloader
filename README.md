@@ -10,6 +10,6 @@ Very simple python script using pytube module to download youtube videos using t
 "Quick fix until pytube updates their module to fix RegexMatchError: get_transform_object: could not find match for var for={(.*?)};"<br>
 
 To find where pytube is installed on your machine, if running linux you can run <code>updatedb</code> in terminal. <br>
-After that run <code>locate pytube/cipher.py in terminal and replace the cipher.py file</code> <br>
+After that run <code>locate pytube/cipher.py</code> in terminal and replace cipher.py with the new cipher.py<br>
 
 
