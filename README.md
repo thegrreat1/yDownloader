@@ -1,4 +1,4 @@
-# yDownloader
+# yDownloader Youtube video downloader
 ![image](https://github.com/thegrreat1/yDownloader/assets/63957530/b77b5c1d-f028-4cfd-88c1-7fc894e635bf)
 
 Very simple python script using pytube module to download youtube videos using terminal.<br>
