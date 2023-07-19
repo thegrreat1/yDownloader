@@ -9,7 +9,7 @@ Very simple python script using pytube module to download youtube videos using t
 - *REQUIRED* cipher.py in /usr/local/lib/python'your version'/dist-packages/pytube/ has to be replaced with the one from this git<br>
 "Quick fix until pytube updates their module to fix RegexMatchError: get_transform_object: could not find match for var for={(.*?)};"<br>
 
-To find where pytube is installed on your machine, if running linux you can run <code>updatedb</code> in terminal <br>
-After that run <code>locate pytube/cipher.py</code> <br>
+To find where pytube is installed on your machine, if running linux you can run <code>updatedb</code> in terminal. <br>
+After that run <code>locate pytube/cipher.py in terminal and replace the cipher.py file</code> <br>
 
 
