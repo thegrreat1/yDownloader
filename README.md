@@ -6,4 +6,4 @@
   
 Very simple python script using pytube module to download youtube videos using terminal.<br>
 - Required python modules can be installed by running  <code> pip install -r requirements.txt </code>
-- - Only tested on Linux
+- Only tested on Linux
